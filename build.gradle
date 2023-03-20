@@ -1,15 +1,37 @@
-task clean << {
+// task clean << {
+//     println '[clean]10s sleep'
+//     sleep(10000)
+// }
+
+// task test << {
+//     println '[test] 2s sleep'
+//     sleep(2000)
+// }
+
+// task build << {
+//     println '[build] 5s sleep'
+//     sleep(5000)
+// }
+
+task hello {
+  doLast {
     println '[clean]10s sleep'
     sleep(10000)
+  }
 }
 
-task test << {
+task test {
+  doLast {
     println '[test] 2s sleep'
     sleep(2000)
+  }
 }
 
-task build << {
+task hello {
+  doLast {
     println '[build] 5s sleep'
     sleep(5000)
+  }
 }
+
 
