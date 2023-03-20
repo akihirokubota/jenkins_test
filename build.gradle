@@ -13,7 +13,7 @@
 //     sleep(5000)
 // }
 
-task hello {
+task clean {
   doLast {
     println '[clean]10s sleep'
     sleep(10000)
@@ -27,7 +27,7 @@ task test {
   }
 }
 
-task hello {
+task build {
   doLast {
     println '[build] 5s sleep'
     sleep(5000)
